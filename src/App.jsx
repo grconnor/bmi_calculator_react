@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Form form "./components/Form";
+import Form from "./components/Form";
 
 class App extends Component {
   state = {
