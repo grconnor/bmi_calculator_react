@@ -1,27 +1,23 @@
 import React, { Component } from "react";
+import Form form "./components/Form";
 
 class App extends Component {
+  state = {
+    weight: "",
+    height: "",
+  };
+
+  onChangeHandler = e => this.setState({ [e.target.name]: e.target.value });
+
   render() {
-    return  (
-      <form>
-        <label htmlFor="weight">Weight</label>
-        <input
-          type="number"
-          required
-          placeholder="Weight in kgs"
-          name="weight"
-          id="weight"
-        />
-        <label htmlFor="height">Height</label>
-        <input
-          type="number"
-          required
-          placeholder="Height in cm"
-          name="height"
-          id="height"
-        />
-        <button>Calculate your BMI</button>
-      </form>
+    return (
+      <div>
+        <Form
+          weight={this.state.wight}
+          height={this.state.wight}
+          onChangeHandler={this.onChangeHandler}
+          />
+      </div>
     );
   }
 }
