@@ -22,7 +22,7 @@ describe("Form", () => {
     expect(wrapper.find("#height").props().value).toEqual("190");
   });
 
-  it("on change the onChangeHandler is beign called", () => {
+  it("on change the onChangeHandler is being called", () => {
     wrapper.find("#weight").simulate("change");
     expect(handleChange).toHaveBeenCalled();
     wrapper.find("#height").simulate("change");
