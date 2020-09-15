@@ -16,10 +16,10 @@ class App extends Component {
           weight={this.state.wight}
           height={this.state.wight}
           onChangeHandler={this.onChangeHandler}
-          />
+        />
       </div>
     );
-  }
+  };
 }
 
 export default App;
