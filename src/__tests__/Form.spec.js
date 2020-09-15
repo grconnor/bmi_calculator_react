@@ -1,7 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
 import Form from "../components/Form";
-import { Item } from "semantic-ui-react";
 
 describe("Form", () => {
   const handleChange = jest.fn();
@@ -20,7 +19,7 @@ describe("Form", () => {
   });
 
   it("renders with height prop", () => {
-    expect(wrapper.find("#weight").props().value).toEqual("190");
+    expect(wrapper.find("#height").props().value).toEqual("190");
   });
 
   it("on change the onChangeHandler is beign called", () => {
